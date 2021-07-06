@@ -1,16 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <RouterView />
+  <div>
+    <p v-if="result">{{ result }}</p>
+    <button @click="handleClick">Click</button>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { defineComponent, ref } from 'vue'
+import { boostrap } from './api/bootstrap';
 
 export default defineComponent({
   name: 'App',
-  components: {
-    HelloWorld
+  setup() {
+    const result = ref<any>()
+    const handleClick = async () => {
+      result.value = await boostrap()
+    }
+
+    return {
+      result,
+      handleClick
+    }
   }
 })
 </script>
