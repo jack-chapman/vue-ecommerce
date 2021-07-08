@@ -1,3 +1,5 @@
 <template>
-  <main>Not found</main>
+  <AppFrame>
+    <main>Not found</main>
+  </AppFrame>
 </template>

@@ -1,5 +1,7 @@
 <template>
-  <main>Order</main>
+  <AppFrame>
+    <main>Order</main>
+  </AppFrame>
 </template>
 
 <script lang="ts">

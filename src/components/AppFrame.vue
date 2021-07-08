@@ -1,18 +1,16 @@
 <template>
   <main>
     <NavTop />
-    <slot />
+    <section class="mx-4 px-4">
+      <slot />
+    </section>
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import NavTop from "./NavTop.vue";
 
 export default defineComponent({
   name: 'AppFrame',
-  components: {
-    NavTop
-  }
 })
 </script>
