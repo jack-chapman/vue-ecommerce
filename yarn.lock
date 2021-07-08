@@ -27,6 +27,16 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
+"@iconify/json-tools@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@iconify/json-tools/-/json-tools-1.0.10.tgz#d9a7050dbbe8bb29d684d4b3f9446ed2d0bea3cc"
+  integrity sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==
+
+"@iconify/json@^1.1.372":
+  version "1.1.372"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-1.1.372.tgz#48b30123c0315a29b4bc71bc4d0e15f5a3fa33fc"
+  integrity sha512-+Dr9qJyGGkoI3CPK8MV9wcmoXBcQR9k98X2b+7FPrZ6KzRzF0w3dKjTla61kaH5KOYIl2+CNAz+cm3Ns7f2FbQ==
+
 "@mswjs/cookies@^0.1.5":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@mswjs/cookies/-/cookies-0.1.6.tgz#176f77034ab6d7373ae5c94bcbac36fee8869249"
@@ -529,7 +539,7 @@ external-editor@^3.0.3:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
-fast-glob@^3.2.5:
+fast-glob@^3.2.5, fast-glob@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.6.tgz#434dd9529845176ea049acc9343e8282765c6e1a"
   integrity sha512-GnLuqj/pvQ7pX8/L4J84nijv6sAnlwvSDpMkJi9i7nPmPxGtRPkBSStfvDW5l6nMdX9VWe+pkKWFTgD+vF2QSQ==
@@ -1309,6 +1319,24 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
+vite-plugin-components@^0.12.2:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-components/-/vite-plugin-components-0.12.2.tgz#3afc97772cfad0bd61aa709924bf06e12abe9cf1"
+  integrity sha512-ecGCqEQMEwPw556WfdbRwbDsdGtBWkjSkuOXw5sKbgaZzVSlybOfrXhGjiYEatR13KCUxTHzioU2eOLu1tpWVQ==
+  dependencies:
+    debug "^4.3.2"
+    fast-glob "^3.2.6"
+    magic-string "^0.25.7"
+    minimatch "^3.0.4"
+
+vite-plugin-icons@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/vite-plugin-icons/-/vite-plugin-icons-0.6.4.tgz#1e9e9a5b310f6b596e6c564a8367735e9a65de02"
+  integrity sha512-NLIUZNpeJV4fH314fn+iI5wxvKOgx2yDzVz6jqaKUyNIi41cv+Ud8J+dueCHVZSxepCIQmMYeCayaPEuhhetbg==
+  dependencies:
+    "@iconify/json-tools" "^1.0.10"
+    vue-template-es2015-compiler "^1.9.1"
+
 vite-plugin-windicss@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/vite-plugin-windicss/-/vite-plugin-windicss-1.2.3.tgz#737834c9ea483540e901d561241ea725760cb4ff"
@@ -1337,6 +1365,11 @@ vue-router@4:
   integrity sha512-YbPf6QnZpyyWfnk7CUt2Bme+vo7TLfg1nGZNkvYqKYh4vLaFw6Gn8bPGdmt5m4qrGnKoXLqc4htAsd3dIukICA==
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.14"
+
+vue-template-es2015-compiler@^1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
+  integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
 vue-tsc@^0.0.24:
   version "0.0.24"
