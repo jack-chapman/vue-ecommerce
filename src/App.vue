@@ -17,7 +17,7 @@ export default defineComponent({
 
 <style>
 body {
-  @apply bg-gray-200;
+  @apply bg-gray-300 text-gray-800;
 }
 .fade-enter-active,
 .fade-leave-active {

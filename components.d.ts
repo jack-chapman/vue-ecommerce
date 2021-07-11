@@ -7,7 +7,9 @@ declare module 'vue' {
     ICarbonArrowRight: typeof import('virtual:vite-icons/carbon/arrow-right')['default']
     ICarbonShoppingCart: typeof import('virtual:vite-icons/carbon/shopping-cart')['default']
     ILogosVue: typeof import('virtual:vite-icons/logos/vue')['default']
+    IOcticonLinkExternal: typeof import('virtual:vite-icons/octicon/link-external')['default']
     NavTop: typeof import('./src/components/NavTop.vue')['default']
+    Panel: typeof import('./src/components/Panel.vue')['default']
   }
 }
 

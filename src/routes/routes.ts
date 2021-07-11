@@ -1,3 +1,4 @@
+import { RouteRecordRaw } from 'vue-router';
 import Home from '../pages/Index.vue';
 const Shop = () => import('../pages/shop/Index.vue');
 const Product = () => import('../pages/shop/Product.vue');
@@ -9,7 +10,7 @@ const Auth = () => import('../pages/auth/Index.vue');
 const LogIn = () => import('../pages/auth/LogIn.vue');
 const SignUp = () => import('../pages/auth/SignUp.vue');
 
-export const routes = [
+export const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'home',
@@ -30,15 +31,24 @@ export const routes = [
     path: '/shop/basket',
     name: 'basket',
     component: Basket,
+    meta: {
+      requiresAuth: true,
+    },
   },
   {
     path: '/orders',
     name: 'orders',
     component: Orders,
+    meta: {
+      requiresAuth: true,
+    },
     children: [
       {
         path: ':order',
         component: Order,
+        meta: {
+          requiresAuth: true,
+        },
       },
     ],
   },

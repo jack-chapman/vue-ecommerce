@@ -9,4 +9,12 @@ export default [
       })
     );
   }),
+  rest.post(apiUrl + '/login', (_, res, ctx) => {
+    return res(
+      ctx.json({
+        success: true,
+        message: 'Successfully logged in',
+      })
+    );
+  }),
 ];

@@ -1,34 +1,29 @@
 <template>
   <AppFrame>
-    <main>Home page</main>
-    <div>
-      <p v-if="result">{{ result }}</p>
-      <button @click="handleClick">Click</button>
-    </div>
+    <main>
+      <Panel>
+        <h1 class="text-xl">Awsome shopping site made with Vue 3!</h1>
+        <p class="mt-4">Also using Vite, WindiCSS, and Pinia</p>
+        <p class="mt-4">
+          See the source code on
+          <a class="underline" href="https://github.com">
+            Github
+            <i-octicon-link-external class="w-4 h-4" />
+          </a>
+        </p>
+      </Panel>
+    </main>
   </AppFrame>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
-import { boostrap } from '../api/bootstrap';
-
-import AppFrame from '../components/AppFrame.vue';
+import { defineComponent } from 'vue'
+import { useTitle } from '@vueuse/core'
 
 export default defineComponent({
   name: 'Index',
-  components: {
-    AppFrame
-  },
   setup() {
-    const result = ref<any>()
-    const handleClick = async () => {
-      result.value = await boostrap()
-    }
-
-    return {
-      result,
-      handleClick
-    }
+    useTitle('Home | Vue eCommerce')
   }
 })
 
